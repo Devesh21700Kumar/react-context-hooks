@@ -4,6 +4,7 @@ import { BookContext } from '../contexts/BookContext';
 
 const BookList = () => {
   const { isLightTheme, light, dark } = useContext(ThemeContext);
+  //looks up in DOM/app.js to find PROVIDER for this CONTEXT**
   const { books } = useContext(BookContext);
   const theme = isLightTheme ? light : dark;
   return ( 
